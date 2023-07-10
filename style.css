@@ -5,8 +5,8 @@ body{
     font-family: "Poppins", sans-serif;
     text-align: center;
     height: 100vh;
-    /* position: relative;
-    overflow: hidden; */
+    position: relative;
+    overflow: hidden;
    
 }
 .dice-title{
@@ -60,4 +60,9 @@ cursor: pointer;
 
 button:hover{
     color: rgb(53, 10, 245);
+}
+
+footer{
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
