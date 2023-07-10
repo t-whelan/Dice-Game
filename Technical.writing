@@ -1,0 +1,68 @@
+Iv'e included a technical writing file.
+To my knowledge, Great engineering Teams spend time on Technical writing.
+-Writing a Document helps think through a Problem and approaches for solving it.
+-It also allows the team to collaborate on the Document.
+-keeps record and what decisions were made and Why.
+-It prevents you from premature solutions.
+-When you write engineering Documents you do better work.
+
+//Objectives
+
+ building a Dice Game Project using HTML, CSS, and JavaScript. The Dice Game is based on a two-player. Both players roll the dice and the player who gets the highest phase value will win the game.
+
+//Ulities & Briefing
+
+Images of Dice Phases: The list of dice phases images are given below. 
+Dice 1 
+Dice 2
+Dice 3
+Dice 4
+Dice 5
+Dice 6
+
+-HTML Code: HTML code is used to design the basic structure of the project. 
+The HTML code contains the container class that holds the player’s name and initial dice phase. 
+Another bottom div contains the two buttons (one button for roll the dice and another button for rename the player name).
+
+-CSS Code: In this section, we will use some CSS property to style the Dice Game.
+
+-JavaScript Code: The JavaScript code contains the functionality of Dice Game. 
+The first functionality is to rename the player name after clicking the button. Another functionality is to roll the dice after clicking the button. After rolling the dice by both the player, anyone player will win who get the highest phase value. 
+If both players get the same phase value then the game will draw.
+
+-After combining all 3 sections (HTML, CSS, JavaScript) we get a complete dice game.
+
+
+
+//Javascript Dice Game Code Challenges:
+-Challenges Faced 
+*Images  for phases of the dice when rolled not displayed.
+*Solution:Incorrect naming and path with Variables. 
+
+// JavaScript Explanation:
+*const dice = document.getElementById('dice-btn');
+-to retrieve an element from the HTML document using JavaScript. In this case, you are using document.getElementById() to get an element with the ID "dice-btn" and storing it in a variable called dice.
+
+*For Dice 1
+var randomDice = Math.floor((Math.random() * 6) + 1);
+	var diceLocation = "img/" + "dice-" + randomDice + ".png";
+	var img1 = document.querySelectorAll("img")[0];
+	img1.setAttribute("src", diceLocation);
+    -Generating a random number to simulate a dice roll and updating the image source based on the result.
+
+*For Dice 2
+var randomDice2 = Math.floor((Math.random() * 6) + 1);
+	var diceLocation2 = "img/" + "dice-" + randomDice2 + ".png";
+	var img2 = document.querySelectorAll("img")[1];
+	img2.setAttribute("src", diceLocation2);
+-Generating another random number and updating the image source for a second dice. That's awesome!
+
+By using the Math.random() function, you're able to generate a random decimal number between 0 and 1. Then, by multiplying it by 6 and adding 1, you get a random number between 1 and 6. 
+Finally, constructing the image path and setting the src attribute of the second image to display the corresponding dice image.
+
+
+*if statement
+if (randomDice > randomDice2) {
+		document.querySelector("h1").innerHTML = " &#128681; Player 1 Wins !";
+	}
+-using an if statement to compare randomDice and randomDice2 variables and update the content of an <h1> element accordingly.

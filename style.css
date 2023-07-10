@@ -1,0 +1,63 @@
+@import url(https://fonts.google.com/specimen/Lobster);
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    height: 100vh;
+    /* position: relative;
+    overflow: hidden; */
+   
+}
+.dice-title{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 40px;
+}
+
+
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    border: 15px solid #000000;
+    border-radius: 25px;
+    border-width: 5px;
+}
+
+
+.dice{
+    display: block;
+    position: relative;
+    padding: 10px 180px;
+}
+.row{
+    display: flex;
+    column-gap: 20px;
+}
+ .col-6{
+    width: 50%;
+    border-radius: 24px;
+}
+
+img-dice{
+    border-radius: 24px;
+    box-shadow: 0px 15px 15px 2px #333593;
+}
+
+button{
+margin-top: 40px;
+height: 54px;
+border-radius: 4px;
+font-family: 'poppins', sans-serif;
+font-weight: 700;
+padding:10px 20px;
+border:0;
+font-size:32px;
+text-transform: uppercase;
+cursor: pointer;
+
+
+}
+
+button:hover{
+    color: rgb(53, 10, 245);
+}
