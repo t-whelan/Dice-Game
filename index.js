@@ -17,16 +17,16 @@ function diceGame() {
 	img2.setAttribute("src", diceLocation2);
 
 	if (randomDice > randomDice2) {
-		document.querySelector("h1").innerHTML = " &#128681; Player 1 Wins !";
+		document.querySelector("h1").innerHTML = "  Player 1 Wins ! 🏆";
 	}
 	else if (randomDice < randomDice2) {
-		document.querySelector("h1").innerHTML = "Player 2 Wins ! &#128681; ";
+		document.querySelector("h1").innerHTML = "Player 2 Wins ! 🏆 ";
 	}
 	else if (randomDice = randomDice2) {
-		document.querySelector("h1").innerHTML = "&#128681; Draw! &#128681;";
+		document.querySelector("h1").innerHTML = "🚩Draw! ";
 	}
 	else {
-		document.querySelector("h1").innerHTML = "Something Error!"
+		document.querySelector("h1").innerHTML = "Error!"
 	}
 	dice.innerHTML = "Play Again"
 }

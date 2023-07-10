@@ -66,3 +66,22 @@ if (randomDice > randomDice2) {
 		document.querySelector("h1").innerHTML = " &#128681; Player 1 Wins !";
 	}
 -using an if statement to compare randomDice and randomDice2 variables and update the content of an <h1> element accordingly.
+In this case, if randomDice is greater than randomDice2, the code inside the if block will be executed.
+In this code, document.querySelector("h1") selects the first <h1> element on the page. Then, innerHTML property is used to change the content of the <h1> element to " 🚩 Player 1 Wins !".
+
+The string "🚩" is an HTML entity code representing a trophy emoji.
+
+So, if randomDice is indeed greater than randomDice2, the content of the first <h1> element will be updated to display the trophy emoji followed by the text "Player 1 Wins !".
+
+*else /else-if statement:
+-using else if statements to check additional conditions after the first if statement.
+
+-If randomDice is less than randomDice2, the code inside the first else if block will run. The content of the <h1> element will be updated to display "Player 2 Wins !" followed by the trophy emoji "🏆".
+
+-If the values of randomDice and randomDice2 are equal, the code inside the second else if block will execute. The content of the <h1> element will be updated to display two trophy emojis with the text "Draw!" in between them.
+
+If none of the previous conditions are met, the code inside the else block will run. The content of the <h1> element will be set to "Error!".
+
+Finally, the dice element's innerHTML will be updated to display "Play Again".
+
+ used === when comparing equality between randomDice and randomDice2, as = is the assignment operator.
